@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "5ca749e1-6356-4a41-8b21-e0c89bc1d46c",
+            "Value": {
+                "id": "ccd13bd5-75d8-47b6-bc69-51b03e42c80a",
+                "resourcePath": "sprites\\front_charge_whirlwind\\front_charge_whirlwind.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5d660eb6-0a43-4315-9dc4-194a75a03772",
             "Value": {
                 "id": "439dc96d-77da-4447-8317-6154ee67587e",
@@ -219,6 +227,14 @@
             "Value": {
                 "id": "b486f0a2-e438-45d7-adac-ff2e97e459a4",
                 "resourcePath": "sprites\\back_charge_slash\\back_charge_slash.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8a2b9b12-ca69-417a-8299-e9b5f5c9146d",
+            "Value": {
+                "id": "9b8bdf5e-214b-41bc-a301-c481ffe7b14a",
+                "resourcePath": "sprites\\side_charge_whirlwind\\side_charge_whirlwind.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -315,6 +331,14 @@
             "Value": {
                 "id": "860951a5-fefc-4143-b60a-aa78cce4b1e8",
                 "resourcePath": "sprites\\spr_player_back_walk\\spr_player_back_walk.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c26a5b75-24ae-4f29-a8be-af2ce4788238",
+            "Value": {
+                "id": "e5bcfc1e-2e3c-4ce7-9029-556885b2cf3f",
+                "resourcePath": "sprites\\back_charge_whirlwind\\back_charge_whirlwind.yy",
                 "resourceType": "GMSprite"
             }
         },

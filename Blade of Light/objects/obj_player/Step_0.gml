@@ -48,7 +48,8 @@ if keyboard_check(ord("Z")) and canCharge = 1
 	
 	if chargeLevel < chargeLevelMax
 		{
-		chargePer += 1;
+		if chargeLevel < 1 then chargePer += 3;
+		if chargeLevel < 2 then chargePer += 1;
 		instance_create_depth(x+random_range(100,-100),y+random_range(100,-100),depth,part_charge_placeholder)
 		
 		if chargePer = 100
@@ -71,17 +72,32 @@ if keyboard_check_released(ord("Z"))
 	if chargeLevel = 1
 		{
 		if facing = 0 then { sprite_index = front_charge_slash; vsp = 50 }
-		if facing = 1 then sprite_index = side_charge_slash;
-		if facing = 2 then sprite_index = back_charge_slash;
+		if facing = 1 then { sprite_index = side_charge_slash; hsp = -drawWidth }
+		if facing = 2 then { sprite_index = back_charge_slash; vsp = -50 }
 		attacking = 1;
 		image_index = 0;
 		image_speed = 2;
 		knockback = 1;
 		}
-	/*charging = 0;
-	chargePer = 0;
-	chargeLevel = 0;
-	walksp = 5*/
+	if chargeLevel = 2
+		{
+		if hsp != 0 or vsp != 0 
+			{
+			if facing = 0 then { sprite_index = front_charge_whirlwind; hsp = moveHor * 30; vsp = moveVert * 30 }
+			if facing = 1 then { sprite_index = side_charge_whirlwind; hsp = moveHor * 30; vsp = moveVert * 30 }
+			if facing = 2 then { sprite_index = back_charge_whirlwind; hsp = moveHor * 30; vsp = moveVert * 30 }
+			}
+			else
+			{
+			if facing = 0 then { sprite_index = front_charge_whirlwind; vsp = 60 }
+			if facing = 1 then { sprite_index = side_charge_whirlwind; hsp = 60 * -drawWidth }
+			if facing = 2 then { sprite_index = back_charge_whirlwind; vsp = -60 }
+			}
+		attacking = 2;
+		image_index = 0;
+		image_speed = 1.5;
+		knockback = 1;
+		}
 	}
 	
 if attacking = 1
@@ -89,12 +105,18 @@ if attacking = 1
 	vsp = lerp(vsp,0,0.5)	
 	hsp = lerp(hsp,0,0.5)	
 	}
+	
+if attacking = 2
+	{
+	vsp = lerp(vsp,0,0.15)	
+	hsp = lerp(hsp,0,0.15)	
+	}
 
 // Player Animations
 
 if facing = 1 then {
-	if hsp > 0 then drawWidth = 1
-	if hsp < 0 then drawWidth = -1
+	if hsp > 0 then drawWidth = -1
+	if hsp < 0 then drawWidth = 1
 	}
 
 if vsp > 0 then facing = 0

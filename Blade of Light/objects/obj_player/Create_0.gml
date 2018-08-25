@@ -39,3 +39,7 @@ facing = 1;
 
 // Knockback is set to 1 when the player is hit; it means the player
 //cannot attack for a brief period, and does not naturally stop
+
+// create display
+// I assume in every ingame level there will be need for the camera
+instance_create_depth(0, 0, -1000000000, ctrl_display);

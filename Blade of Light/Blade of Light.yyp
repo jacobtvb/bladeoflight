@@ -503,11 +503,27 @@
             }
         },
         {
+            "Key": "75ac291e-7061-4bcb-8e8a-3b3545332d41",
+            "Value": {
+                "id": "712d2d68-01e1-48e2-8101-cd2543e96db4",
+                "resourcePath": "options\\html5\\options_html5.yy",
+                "resourceType": "GMHtml5Options"
+            }
+        },
+        {
             "Key": "790ad308-0e20-4240-befb-33b4ebe8a05b",
             "Value": {
                 "id": "7ece7758-817a-4dc3-ba7c-530c1497c956",
                 "resourcePath": "views\\790ad308-0e20-4240-befb-33b4ebe8a05b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7e093a2a-e51c-4a1e-9a53-f9080d38730b",
+            "Value": {
+                "id": "ce30781c-96be-46d0-8595-4197b063407e",
+                "resourcePath": "options\\windowsuap\\options_windowsuap.yy",
+                "resourceType": "GMWindowsUAPOptions"
             }
         },
         {
@@ -524,6 +540,14 @@
                 "id": "f9577c10-d0cb-4296-bd1b-e2859beb465f",
                 "resourcePath": "objects\\obj_weaklingSword\\obj_weaklingSword.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8427047f-9ef8-4c77-89f3-9c20623d07b6",
+            "Value": {
+                "id": "0b26be10-86ae-41c2-bf3d-38ca0a02bb04",
+                "resourcePath": "options\\ios\\options_ios.yy",
+                "resourceType": "GMiOSOptions"
             }
         },
         {
@@ -620,6 +644,14 @@
                 "id": "254d7de6-9132-4b24-822d-751be43675bb",
                 "resourcePath": "sprites\\spr_weaklingDie\\spr_weaklingDie.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a128950b-5063-4876-b4a6-b99dbd2ea6d1",
+            "Value": {
+                "id": "1d8c4284-86f2-4761-a189-d29b97b571cf",
+                "resourcePath": "options\\amazonfire\\options_amazonfire.yy",
+                "resourceType": "GMAmazonFireOptions"
             }
         },
         {
@@ -871,6 +903,14 @@
             }
         },
         {
+            "Key": "e42bf5cc-3f46-4d67-a6d0-a4885a11ac3f",
+            "Value": {
+                "id": "b9be1c24-54aa-4684-ab01-d597888ea0cb",
+                "resourcePath": "options\\android\\options_android.yy",
+                "resourceType": "GMAndroidOptions"
+            }
+        },
+        {
             "Key": "e459d9ed-a417-49b0-bbbe-eda9ecadf68e",
             "Value": {
                 "id": "828f4134-8ffe-47c4-ae72-8d885719b7ca",
@@ -884,6 +924,14 @@
                 "id": "194c2cb8-eadb-40d5-97a0-8c960562119c",
                 "resourcePath": "sprites\\spr_hurt\\spr_hurt.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e84ce728-5f69-4add-a78c-2a201c135d7f",
+            "Value": {
+                "id": "8d7f90a0-8618-4e7a-b4be-e2df39979bc7",
+                "resourcePath": "objects\\ctrl_display\\ctrl_display.yy",
+                "resourceType": "GMObject"
             }
         },
         {

@@ -1,14 +1,23 @@
 {
-    "id": "c7d2e4ac-9d46-4831-8aa4-fd5b875a6ee8",
+    "id": "ff447401-3754-48e7-bff2-7eb606cb3b5a",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_weaklingBurst",
+    "name": "obj_mageFireball",
     "eventList": [
-        
+        {
+            "id": "d23d1e2e-d107-4753-98fe-15eee77a4373",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "ff447401-3754-48e7-bff2-7eb606cb3b5a"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "6a384f41-f592-4810-b304-4f00ee70c1a7",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -24,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "2740cc0b-155f-4f51-8891-68fa473300df",
     "visible": true
 }

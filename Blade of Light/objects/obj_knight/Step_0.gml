@@ -41,14 +41,24 @@ if state = "pursue"
 	if target.x > x then drawWidth = -1
 	if target.x < x then drawWidth = 1
 	
-	if point_distance(x,y,target.x,target.y) < 500 and canAttack = 1
+	if point_distance(x,y,target.x,target.y) < 600 and canAttack = 1
 		{
-		state = "attack1_phase1"
-		hsp = 0;
-		vsp = 0;
-		sprite_index = spr_knightSlash;
-		image_index = 0;
-		
+		if irandom(1) = 1 {		
+			state = "attack2_phase1"
+			hsp = 0;
+			vsp = 0;
+			sprite_index = spr_knightJump;
+			image_index = 0;
+			}
+		else
+			{
+			state = "attack1_phase1"
+			hsp = 0;
+			vsp = 0;
+			sprite_index = spr_knightSlash;
+			image_index = 0;
+			dir3 = -100
+			}
 		}
 	}
 	
@@ -67,12 +77,13 @@ if state = "attack1_phase1"
 		inst = instance_create_depth(x,y,depth,obj_knightExplodeSpawner1)
 		with inst	
 			{
-			alarm[1] = 50;
+			alarm[1] = 30;
 			alarm[0] = 3;
 			parent = other
-			direction = parent.walkAngle + random_range(-90,90)
-			speed = 10;
+			direction = parent.walkAngle + parent.dir3
+			speed = 20;
 			}
+		dir3 += 40
 		}
 		inst = instance_create_depth(x,y,depth,obj_damage)
 		with inst	
@@ -93,7 +104,42 @@ if state = "attack1_phase2"
 	hsp = lerp(hsp,0,0.2)
 	vsp = lerp(vsp,0,0.2)
 	}
+	
+if state = "attack2_phase1"	
+	{
+	if image_index >= 3 and image_index < 4
+		{
+		walkAngle = point_direction(x,y,target.x,target.y)
+		if target.x > x then drawWidth = -1
+		if target.x < x then drawWidth = 1
+		state = "attack2_phase2"
+		hsp = lengthdir_x(15,walkAngle)
+		vsp = lengthdir_y(15,walkAngle)
+		dir2 = 0;
+		}
+	}
 
+if state = "attack2_phase2"	
+	{
+	if image_index >= 6 and image_index < 7
+		{
+		hsp = 0;
+		vsp = 0;
+		repeat(12)
+			{
+			inst = instance_create_depth(x,y,depth,obj_knightExplodeSpawner2)
+			with inst	
+			{
+			alarm[1] = 7;
+			alarm[0] = 1;
+			parent = other
+			direction = parent.dir2
+			speed = 50;
+			}
+			dir2 += 30;
+			}
+		}
+	}
 	
 // Visuals
 

@@ -8,7 +8,8 @@
         "740af516-8c76-4f04-b6cd-f93e01c0e231",
         "52cf9927-309b-4977-bd3e-8dde78016c81",
         "8cb536b5-a46b-44e8-b47e-bb7e9c8ce3b2",
-        "c09cf1f6-282b-40c7-b497-84d6c2bb927a"
+        "c09cf1f6-282b-40c7-b497-84d6c2bb927a",
+        "011e89a5-a10f-4650-8fdc-5e4dd0f326e2"
     ],
     "filterType": "GMSprite",
     "folderName": "Charger",

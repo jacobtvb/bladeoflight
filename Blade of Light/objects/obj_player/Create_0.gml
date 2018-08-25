@@ -9,6 +9,7 @@ dashsp = 20;
 walksp = 3.5;
 walkspMax = 3.5;
 restrict = 0;
+dashing = 0;
 
 // Attacking
 

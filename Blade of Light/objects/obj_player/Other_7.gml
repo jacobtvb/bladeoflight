@@ -18,4 +18,5 @@ if attacking = 2
 	walksp = walkspMax
 	knockback = 0;
 	image_speed = 1.3
+	invul = 0;
 	}

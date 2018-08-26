@@ -5,26 +5,6 @@
     "name": "obj_trans",
     "eventList": [
         {
-            "id": "13836267-aee8-40b9-952f-99dd508cd12d",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "b6985345-3cca-456d-9ae1-3d255e5c8cbb"
-        },
-        {
-            "id": "9d3896c2-20d7-451c-b21f-f0c06a04c0e9",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "b6985345-3cca-456d-9ae1-3d255e5c8cbb"
-        },
-        {
             "id": "6662065f-931b-4450-8437-c24b6cc4c1db",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -51,7 +31,55 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "6f85e437-1ffd-4696-a1cd-2fe1e8d0f83d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": [
+                "\"right\"",
+                "\"up\"",
+                "\"left\"",
+                "\"down\""
+            ],
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "\"right\"",
+            "varName": "side",
+            "varType": 6
+        },
+        {
+            "id": "1926ce5d-a996-4dbd-98d2-1911c7181ad2",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "\"\"",
+            "varName": "edge",
+            "varType": 2
+        },
+        {
+            "id": "52d20be3-c9ba-4d3e-8e6a-d94aa03b2131",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 512,
+            "value": "rm_template",
+            "varName": "target_room",
+            "varType": 5
+        }
+    ],
     "solid": false,
     "spriteId": "1f22c54e-ebf3-4404-8ae1-d24b461ff9ee",
     "visible": true

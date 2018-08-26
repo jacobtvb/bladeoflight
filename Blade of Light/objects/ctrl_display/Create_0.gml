@@ -24,5 +24,3 @@ camera = camera_create_view(
     camera_height
     );
 view_camera[0] = camera;
-
-layer_depth(layer, -15000);

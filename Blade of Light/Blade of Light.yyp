@@ -903,6 +903,14 @@
             }
         },
         {
+            "Key": "781a0249-754e-43f5-ad45-3c1d41dcbb5b",
+            "Value": {
+                "id": "c6167215-5938-4f95-967f-c1d7d6ea18fb",
+                "resourcePath": "objects\\obj_scytheThrown\\obj_scytheThrown.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "790ad308-0e20-4240-befb-33b4ebe8a05b",
             "Value": {
                 "id": "7ece7758-817a-4dc3-ba7c-530c1497c956",
@@ -1556,6 +1564,22 @@
                 "id": "ba22d27f-9f48-45eb-8e9c-9f2fdd4cbd63",
                 "resourcePath": "scripts\\gamestate_fallen_make\\gamestate_fallen_make.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d8f77c8d-de9b-4833-afd0-c996b4168424",
+            "Value": {
+                "id": "aefed8fe-0509-48c3-8ca3-4e7e3193e9f1",
+                "resourcePath": "sprites\\spr_vgSpin\\spr_vgSpin.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d94b9eb7-8053-4486-aff1-6fb31c2e7e6d",
+            "Value": {
+                "id": "385ac071-c154-4309-b513-2c94a9b01149",
+                "resourcePath": "rooms\\rm_gardens6\\rm_gardens6.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

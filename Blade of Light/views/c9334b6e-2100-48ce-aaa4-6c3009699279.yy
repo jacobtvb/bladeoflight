@@ -12,7 +12,8 @@
         "0631cb31-518e-4083-83c5-1875610f3d07",
         "ea41a494-c48d-447b-b574-1ab1c3e47da5",
         "c234ea26-7d61-4990-a511-a8f8cd8232d6",
-        "26131e9c-4437-4bec-ad70-afc037a73b53"
+        "26131e9c-4437-4bec-ad70-afc037a73b53",
+        "d8f77c8d-de9b-4833-afd0-c996b4168424"
     ],
     "filterType": "GMSprite",
     "folderName": "Void God",

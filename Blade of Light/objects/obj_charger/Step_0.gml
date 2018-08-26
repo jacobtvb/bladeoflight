@@ -34,7 +34,7 @@ y = y + vsp;
 
 if state = "idle"
 	{
-	if !collision_line(x,y,target.x,target.y,obj_wall,false,true)	
+	if !collision_line(x,y,target.x,target.y,obj_wall,false,true) and point_distance(x,y,target.x,target.y) < 700
 		{
 		state = "pursue"
 		}

@@ -75,6 +75,7 @@ if keyboard_check(ord("Z")) and canCharge = 1
 		{
 		if chargeLevel < 1 then chargePer += 3;
 		if chargeLevel < 2 then chargePer += 1;
+		if chargeLevel < 3 then chargePer += 1;
 		instance_create_depth(x+random_range(100,-100),y+random_range(100,-100),depth,part_charge_placeholder)
 		
 		if chargePer = 100
@@ -170,6 +171,13 @@ if keyboard_check_released(ord("Z"))
 		chargePer = 0;
 		chargeLevel = 0;
 		invul = 1;
+		}
+		
+	if chargeLevel = 3
+		{
+		chargePer = 0;
+		chargeLevel = 0;
+		instance_create_depth(x,y,depth,obj_veneraPlayer)
 		}
 	}
 	

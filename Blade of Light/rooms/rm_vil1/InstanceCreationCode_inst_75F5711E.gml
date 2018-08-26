@@ -1,0 +1,1 @@
+info = "Press F to pay respects"

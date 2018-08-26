@@ -42,4 +42,4 @@ facing = 1;
 
 // create display
 // I assume in every ingame level there will be need for the camera
-instance_create_depth(0, 0, -1000000000, ctrl_display);
+instance_create_depth(0, 0, -15000, ctrl_display);

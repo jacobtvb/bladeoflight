@@ -1,5 +1,7 @@
 if (ds_list_find_index(ingame_rooms, room) >= 0)
 {
+    bgm_play(bgm_set[? room]);
+
     show_debug_message("TEEEEST");
     var _spawn_point = gamestate_get("player_spawn");
     var _xoffset = gamestate_get("player_xoffset");

@@ -85,7 +85,7 @@ if state = "AoE_phase3"
 
 if state = "AoE_phase4"
 	{
-	if image_index >= 6 and image_index < 7
+	if image_index >= 8 and image_index < 9
 		{
 		with obj_veneraAoE sprite_index = spr_veneraAoEboom	
 		with obj_veneraAoE image_index = 0;

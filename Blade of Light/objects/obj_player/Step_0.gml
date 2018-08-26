@@ -235,6 +235,12 @@ if charging = 1 and attacking = 0 and dashing != 1
 			if facing = 2 then sprite_index = back_charge;	
 			}
 	}
-	
+    
+// Deding
+
+if (hp <= 0)
+{
+    navigation_do();
+}
 
 depth = -bbox_bottom

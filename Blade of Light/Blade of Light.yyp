@@ -447,6 +447,14 @@
             }
         },
         {
+            "Key": "3a4c82d3-e9b9-47be-8031-bf1c90252d03",
+            "Value": {
+                "id": "a1ae2e72-f728-45ec-b080-8fb652aaf86e",
+                "resourcePath": "views\\3a4c82d3-e9b9-47be-8031-bf1c90252d03.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "3beb8779-d66f-4e47-a789-49efd2bbf817",
             "Value": {
                 "id": "de82fd6c-f737-41da-9b5b-8ccbdc0b8e80",
@@ -524,6 +532,14 @@
                 "id": "b133750e-4550-4849-9153-f8a9c833ee48",
                 "resourcePath": "objects\\par_enemy\\par_enemy.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "44f1e9c6-c907-4b69-8307-3a0f8a65fabf",
+            "Value": {
+                "id": "d165e225-05f7-4fbb-aec1-84e280edd6b1",
+                "resourcePath": "sounds\\bgm_village\\bgm_village.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -964,6 +980,14 @@
                 "id": "f9577c10-d0cb-4296-bd1b-e2859beb465f",
                 "resourcePath": "objects\\obj_weaklingSword\\obj_weaklingSword.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8025907f-e160-4aa8-b3d7-7504f4f63810",
+            "Value": {
+                "id": "b9783d96-77ce-4bae-b9e4-634bb7279723",
+                "resourcePath": "sounds\\bgm_venera_first\\bgm_venera_first.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -1519,6 +1543,14 @@
             }
         },
         {
+            "Key": "cdc4c9f3-afb7-42ff-b67c-73f7293ca5be",
+            "Value": {
+                "id": "712621ea-3191-41cf-b3b8-8e334b34cf5a",
+                "resourcePath": "scripts\\bgm_play\\bgm_play.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d1248285-72b0-42a2-a415-ade8d42da89c",
             "Value": {
                 "id": "43462a6b-ab08-43f0-a452-a05cf2d9573d",
@@ -1532,6 +1564,14 @@
                 "id": "9b8d6555-6d5d-4989-86b3-0fc3b28761b4",
                 "resourcePath": "sprites\\spr_info\\spr_info.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d3886e80-f904-4a2f-9eab-ca0aa3f3eaef",
+            "Value": {
+                "id": "2d8b4685-4672-48d3-b15f-5059d27fb2ea",
+                "resourcePath": "sounds\\bgm_garden\\bgm_garden.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -1863,7 +1903,8 @@
         "d8f39825-b7cd-4401-9bd5-f54e99b6c3f9",
         "56fff8c9-5e3b-4298-89fa-c81e7c2d090e",
         "c6c9d131-bcb1-4eb0-9233-b37c90ea1ed6",
-        "aa3c5754-940c-4489-b60f-9e736f436c9d"
+        "aa3c5754-940c-4489-b60f-9e736f436c9d",
+        "cdc4c9f3-afb7-42ff-b67c-73f7293ca5be"
     ],
     "tutorial": ""
 }

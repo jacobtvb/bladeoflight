@@ -12,4 +12,26 @@ ingame_rooms = ds_list_create_from_array([
     rm_gardens5, rm_gardens6
     ]);
 
+current_bgm = undefined;
+next_bgm = undefined;
+
+bgm_set = ds_map_create();
+bgm_set[? rm_vil1] = bgm_village;
+bgm_set[? rm_vil2] = bgm_village;
+bgm_set[? rm_vil3] = bgm_village;
+bgm_set[? rm_vil4] = bgm_village;
+bgm_set[? rm_vil5] = bgm_village;
+bgm_set[? rm_vil6] = bgm_village;
+
+bgm_set[? rm_vilr1] = bgm_village;
+bgm_set[? rm_vilr2] = bgm_village;
+bgm_set[? rm_vilL1] = bgm_village;
+bgm_set[? rm_vilL2] = bgm_village;
+
+bgm_set[? rm_gardens1] = bgm_garden;
+bgm_set[? rm_gardens2] = bgm_garden;
+bgm_set[? rm_gardens3] = bgm_garden;
+bgm_set[? rm_gardens4] = bgm_garden;
+bgm_set[? rm_gardens5] = bgm_garden;
+bgm_set[? rm_gardens6] = bgm_venera_first;
 

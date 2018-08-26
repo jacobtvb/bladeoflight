@@ -479,6 +479,14 @@
             }
         },
         {
+            "Key": "44102eb5-3672-46d9-a9f1-0fbc4f20fe7f",
+            "Value": {
+                "id": "b133750e-4550-4849-9153-f8a9c833ee48",
+                "resourcePath": "objects\\par_enemy\\par_enemy.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "45748086-cd3e-4f71-8cfc-d0e5566ac997",
             "Value": {
                 "id": "ec3f80e1-70f7-4067-aaca-1d9e6ea96bf7",
@@ -604,6 +612,14 @@
                 "id": "466ad70f-6d86-4b9d-9bcd-508eff86eaf4",
                 "resourcePath": "objects\\obj_info\\obj_info.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "56fff8c9-5e3b-4298-89fa-c81e7c2d090e",
+            "Value": {
+                "id": "f89c0771-75e8-4dc6-95de-c2f74c37673f",
+                "resourcePath": "scripts\\gamestate_fallen_count\\gamestate_fallen_count.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1399,6 +1415,14 @@
             }
         },
         {
+            "Key": "cac4ecaf-d4bc-4096-93ab-4a5c19f7af5e",
+            "Value": {
+                "id": "50fa247a-c324-4c91-babf-79677a48f1a6",
+                "resourcePath": "objects\\par_enemyLight\\par_enemyLight.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "8dbdcac9-8a35-4557-9108-3b9f954899e3",
@@ -1455,11 +1479,27 @@
             }
         },
         {
+            "Key": "d8f39825-b7cd-4401-9bd5-f54e99b6c3f9",
+            "Value": {
+                "id": "ba22d27f-9f48-45eb-8e9c-9f2fdd4cbd63",
+                "resourcePath": "scripts\\gamestate_fallen_make\\gamestate_fallen_make.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d9731a69-f103-4576-bc73-38c5e2d84698",
             "Value": {
                 "id": "2524d998-5e48-4ad0-82dc-22a01eba3dea",
                 "resourcePath": "views\\d9731a69-f103-4576-bc73-38c5e2d84698.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "da0911eb-3449-4750-bb83-cc64774c1287",
+            "Value": {
+                "id": "8f29f49c-4265-41ba-bff3-1268f12bb09b",
+                "resourcePath": "scripts\\gamestate_fallen_get\\gamestate_fallen_get.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1707,6 +1747,9 @@
         "d1248285-72b0-42a2-a415-ade8d42da89c",
         "1acb9c70-0809-4149-8c9a-c2a0fd059248",
         "e970ea17-6043-4bbf-8c57-a6ba86bbe7af",
+        "da0911eb-3449-4750-bb83-cc64774c1287",
+        "d8f39825-b7cd-4401-9bd5-f54e99b6c3f9",
+        "56fff8c9-5e3b-4298-89fa-c81e7c2d090e",
         "c6c9d131-bcb1-4eb0-9233-b37c90ea1ed6",
         "aa3c5754-940c-4489-b60f-9e736f436c9d"
     ],

@@ -1,3 +1,5 @@
+event_inherited();
+
 hp = 2;
 state = "idle";
 walksp = 4;

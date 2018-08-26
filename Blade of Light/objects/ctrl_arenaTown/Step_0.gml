@@ -1,3 +1,5 @@
+show_debug_message(state);
+
 if instance_exists(obj_player) and state = "wait"
 	{
 	if point_distance(x,y,obj_player.x,obj_player.y) < 400	
@@ -15,6 +17,7 @@ if instance_exists(obj_player) and state = "wait"
 	
 if state = "phase1"
 	{
+        show_debug_message(instance_number(obj_weakling));
 	if !instance_exists(obj_weakling)
 		{
 		state = "phase2"

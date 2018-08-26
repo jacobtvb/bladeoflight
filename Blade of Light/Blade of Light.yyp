@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "0785d4b4-123d-47b0-802b-00536e44e09a",
+            "Value": {
+                "id": "5bfd2fa6-17cb-4dd6-a7f9-cb9966fa6fa9",
+                "resourcePath": "sprites\\spr_statueWater\\spr_statueWater.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "08acee9d-6bcd-4d23-91fa-7f8298437946",
             "Value": {
                 "id": "593a00d2-6321-4068-bd30-28b030a8a544",
@@ -239,6 +247,14 @@
             }
         },
         {
+            "Key": "24e02031-63ba-4dc7-955c-4d7ae295ea7c",
+            "Value": {
+                "id": "5221ecd6-d125-4714-ac44-aec2d8b1fdd8",
+                "resourcePath": "objects\\obj_plant1\\obj_plant1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2582f469-34a9-479b-90c7-5ee7c3241a60",
             "Value": {
                 "id": "8d0271bd-65c7-435f-9b69-799a6c2b525f",
@@ -340,6 +356,14 @@
                 "id": "c6154777-a37f-40cf-bea1-54b29a5b763d",
                 "resourcePath": "sprites\\spr_weaklingIdle\\spr_weaklingIdle.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "32736ffc-6ae5-4d46-93a9-3dd141126c94",
+            "Value": {
+                "id": "72fd191b-cd3b-485a-a575-a29996846d4c",
+                "resourcePath": "tilesets\\til_waterways\\til_waterways.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -1015,6 +1039,14 @@
             }
         },
         {
+            "Key": "95dfddcc-8366-4838-9877-6351af6d4d1e",
+            "Value": {
+                "id": "747019fe-b01e-4c69-92ec-d9101a54f9f3",
+                "resourcePath": "sprites\\spr_plant2\\spr_plant2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "969b3287-9076-4680-a47f-61c86980f45e",
             "Value": {
                 "id": "749106c4-f782-4d52-b602-cd6c38868ea8",
@@ -1067,6 +1099,14 @@
             "Value": {
                 "id": "f91bf403-9feb-47f7-a3bb-4ebe5d1a0367",
                 "resourcePath": "sprites\\spr_rayDust\\spr_rayDust.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a48b3009-a5dc-47a6-b962-74dd853b9721",
+            "Value": {
+                "id": "e3ed7850-a24c-4b77-8eee-1539d649cf93",
+                "resourcePath": "sprites\\spr_plant1\\spr_plant1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1199,6 +1239,22 @@
             }
         },
         {
+            "Key": "b95a437c-5efd-4220-9ab1-8f45ddfefd0f",
+            "Value": {
+                "id": "d5f03ea9-d44d-4e2e-9d17-7582d7dde14b",
+                "resourcePath": "sprites\\spr_statue\\spr_statue.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ba168aea-b077-42b3-9380-4972b35076d0",
+            "Value": {
+                "id": "c456304f-964e-4f0c-ba41-c0c3591cc2b3",
+                "resourcePath": "objects\\obj_statuewater\\obj_statuewater.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "bbc4cd74-1f20-4c3f-aa14-c797d788523a",
             "Value": {
                 "id": "6b9ecba2-647d-4ad0-ba78-6822e8f2e081",
@@ -1327,6 +1383,14 @@
             }
         },
         {
+            "Key": "c9334b6e-2100-48ce-aaa4-6c3009699279",
+            "Value": {
+                "id": "f2031a1e-4e65-4624-b36c-2a4e96857a3f",
+                "resourcePath": "views\\c9334b6e-2100-48ce-aaa4-6c3009699279.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "ca36cebe-5737-4978-b62f-cc32380dd6b8",
             "Value": {
                 "id": "f0949f27-c5ad-4a40-84f8-6a8b2a7aa139",
@@ -1412,6 +1476,14 @@
                 "id": "73bf7b0d-36c1-4d54-8296-c2e0cae97c2e",
                 "resourcePath": "sprites\\spr_veneraAoEboom\\spr_veneraAoEboom.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "dd37fc1f-c3a3-409a-aa5e-497386614b0e",
+            "Value": {
+                "id": "36cfed30-3606-45d3-9b14-38b160b60bb6",
+                "resourcePath": "objects\\obj_statue\\obj_statue.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1596,6 +1668,14 @@
                 "id": "604f38dc-2f51-4a92-8c9d-7b98e4a0f0d5",
                 "resourcePath": "views\\fbe8c642-86a7-48b9-bb6d-8155cc16e6d7.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "fbfc992b-2050-4cb0-b11f-49e160fb409d",
+            "Value": {
+                "id": "ab4bde98-bc0d-4d61-bd7a-908c661dec37",
+                "resourcePath": "sprites\\spr_til_waterways\\spr_til_waterways.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

@@ -81,6 +81,25 @@ if state = "attack1_phase2"
 	
 // Visuals
 
+// Die
 
+if hp <= 0 then
+	{
+	inst = instance_create_depth(x,y,depth,obj_weaklingCorpse)
+	with inst
+		{
+		direction = random(360)
+		speed = 6;
+		}
+	
+	inst = instance_create_depth(x,y,depth,obj_weaklingSword)
+	with inst
+		{
+		direction = 220
+		speed = 4;
+		}
+	//instance_create_depth(x,y,depth,obj_weaklingSplat)
+	instance_destroy();	
+	}
 
 depth = -bbox_bottom

@@ -1,4 +1,4 @@
-hp = 2;
+hp = 4;
 state = "idle";
 walksp = 3;
 damage = 1;
@@ -9,6 +9,8 @@ drawAngle = 0;
 
 hsp = 0;
 vsp = 0;
+
+invul = 0;
 
 drawWidth = 1;
 

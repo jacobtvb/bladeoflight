@@ -4,8 +4,8 @@ if image_index > 6 and image_index < 7
 		with inst	
 			{
 			parent = other
-			image_xscale = 1.5;
-			image_yscale = 1.5;
+			image_xscale = 1;
+			image_yscale = 1;
 			alarm[0] = 10;
 			ypl = -30
 			}	

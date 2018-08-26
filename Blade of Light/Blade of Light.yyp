@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "0c323602-97a3-44b8-aad4-9f057b274741",
+            "Value": {
+                "id": "33f7b0e4-3d79-4faf-a284-553ba52163d4",
+                "resourcePath": "sprites\\spr_veneraAoESpawn\\spr_veneraAoESpawn.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0e7aa3fd-6c51-4ec8-82d1-d02644a3221c",
             "Value": {
                 "id": "9a34e51b-4865-4f25-a556-e2eaf91da8a8",
@@ -319,6 +327,14 @@
             }
         },
         {
+            "Key": "4c06941a-05bb-436a-8dcf-863a1de0f480",
+            "Value": {
+                "id": "57faba39-0d8d-491a-a685-b14e88b4f308",
+                "resourcePath": "sprites\\spr_veneraStab\\spr_veneraStab.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4d1fdeb7-f95e-4e36-bddc-6f96c4ad52c9",
             "Value": {
                 "id": "f973af60-c394-4937-85e2-c5533c8975af",
@@ -348,6 +364,14 @@
                 "id": "f0c55771-d377-45bf-a931-fd25efda9934",
                 "resourcePath": "sprites\\spr_chargerRun\\spr_chargerRun.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5510ad2b-adf0-446c-8501-397a13c3e4b6",
+            "Value": {
+                "id": "b94b0e69-6b5f-4466-89ee-42d9723c068e",
+                "resourcePath": "objects\\obj_veneraAoE\\obj_veneraAoE.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -431,6 +455,22 @@
             }
         },
         {
+            "Key": "6715318d-9746-4ecd-98ef-648c3c03343c",
+            "Value": {
+                "id": "8e371ac1-c425-42ff-9a7c-5ca129d427a0",
+                "resourcePath": "sprites\\spr_veneraAoE\\spr_veneraAoE.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "677c3cef-ce1d-43e9-8fef-b8030d75bc2c",
+            "Value": {
+                "id": "5db27b42-0a69-4113-a661-de9354809d7f",
+                "resourcePath": "views\\677c3cef-ce1d-43e9-8fef-b8030d75bc2c.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "6a384f41-f592-4810-b304-4f00ee70c1a7",
             "Value": {
                 "id": "c0e24211-4d54-483a-adc7-4d4287222b35",
@@ -444,6 +484,14 @@
                 "id": "a8a63980-b90e-4889-a2d3-5b04b7d4844d",
                 "resourcePath": "sprites\\spr_wall\\spr_wall.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6ad304be-963f-401d-ac06-d4d05a2600cd",
+            "Value": {
+                "id": "dd012119-75b4-4f83-bba9-b859d2462fec",
+                "resourcePath": "objects\\obj_venera\\obj_venera.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -466,7 +514,7 @@
             "Key": "6d86208f-218d-4d7a-8f04-2c5e14abd84f",
             "Value": {
                 "id": "8eb83fa8-44b0-4c72-887e-66054fd698c5",
-                "resourcePath": "rooms\\room0\\room0.yy",
+                "resourcePath": "rooms\\rm_test\\rm_test.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -495,6 +543,14 @@
             }
         },
         {
+            "Key": "708b8571-307a-4805-8cf9-b13a56f66588",
+            "Value": {
+                "id": "da721c96-d230-4380-bfcb-9acebfc1dd83",
+                "resourcePath": "objects\\obj_partAnim\\obj_partAnim.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "740af516-8c76-4f04-b6cd-f93e01c0e231",
             "Value": {
                 "id": "66b3682d-371f-4fd0-8d5d-d6aaad911a9e",
@@ -511,11 +567,35 @@
             }
         },
         {
+            "Key": "7619a06f-0efc-4afc-8aa7-064443b5a8fc",
+            "Value": {
+                "id": "b3301b88-2f7b-4e52-96b9-ce40d3aa888d",
+                "resourcePath": "sprites\\spr_veneraDodge\\spr_veneraDodge.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "790ad308-0e20-4240-befb-33b4ebe8a05b",
             "Value": {
                 "id": "7ece7758-817a-4dc3-ba7c-530c1497c956",
                 "resourcePath": "views\\790ad308-0e20-4240-befb-33b4ebe8a05b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7cbe7869-c679-4b56-9cbc-b78ac3a8c1f2",
+            "Value": {
+                "id": "4f06152b-78d9-4dda-8ce9-1e6fd3813b8b",
+                "resourcePath": "sprites\\spr_veneraStabLand\\spr_veneraStabLand.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7dcd2e51-84d8-43a9-abc2-cd2d6ed10c87",
+            "Value": {
+                "id": "d3cf85eb-8f40-4b8c-b5db-3f30b159060b",
+                "resourcePath": "sprites\\spr_veneraAoELand\\spr_veneraAoELand.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -556,6 +636,14 @@
                 "id": "fb968ff9-aca2-4e4b-af13-00de28342813",
                 "resourcePath": "objects\\obj_playerDamage\\obj_playerDamage.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "87df3b29-27cb-4f85-99c8-586b967c1903",
+            "Value": {
+                "id": "43f85adc-6f99-48d8-9242-3b8453bda0ff",
+                "resourcePath": "sprites\\spr_slashHit\\spr_slashHit.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -628,6 +716,14 @@
                 "id": "f478f21c-63c2-43d0-b8ce-99c58d844e9c",
                 "resourcePath": "views\\951de4f9-a78e-4461-b55c-387a9aa31f79.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "969b3287-9076-4680-a47f-61c86980f45e",
+            "Value": {
+                "id": "749106c4-f782-4d52-b602-cd6c38868ea8",
+                "resourcePath": "sprites\\spr_veneraDodgeLand\\spr_veneraDodgeLand.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -751,6 +847,14 @@
             }
         },
         {
+            "Key": "bbe7e922-f638-4eb8-9b8c-05eb73b1e5cf",
+            "Value": {
+                "id": "b35a25b8-27ce-49d4-b47d-0c02fcecf6f1",
+                "resourcePath": "sprites\\spr_veneraIdle\\spr_veneraIdle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bfa7ec92-05d1-488b-aba2-aa3b7532f427",
             "Value": {
                 "id": "860951a5-fefc-4143-b60a-aa78cce4b1e8",
@@ -791,6 +895,14 @@
             }
         },
         {
+            "Key": "c30a8a0b-4116-46c0-a44f-6021ea0bac0e",
+            "Value": {
+                "id": "ed64e330-dc24-4d4e-b689-fac3c8615433",
+                "resourcePath": "sprites\\spr_veneraStabIn\\spr_veneraStabIn.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c3b8f14b-917c-467c-824c-de36d27d850d",
             "Value": {
                 "id": "560373f0-9b92-4087-8c17-e17b472675a8",
@@ -804,6 +916,14 @@
                 "id": "dbd8a831-6ff4-4636-bfdd-96d29106d858",
                 "resourcePath": "sprites\\spr_weaklingWalk\\spr_weaklingWalk.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c7ce9986-8350-4b84-bc15-865acec1e20a",
+            "Value": {
+                "id": "cf4f32c5-f8c0-4ba6-a357-80ea9ce35c2f",
+                "resourcePath": "views\\c7ce9986-8350-4b84-bc15-865acec1e20a.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -847,6 +967,14 @@
             }
         },
         {
+            "Key": "d7a5cf3a-31d5-4798-8cba-1c0548488cad",
+            "Value": {
+                "id": "85342e42-cfba-4810-a210-fae499af37ad",
+                "resourcePath": "sprites\\spr_veneraSlash\\spr_veneraSlash.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d84ec3a8-56fd-4a63-b00a-095f1915e283",
             "Value": {
                 "id": "284a91ab-5a5b-489c-a7b6-e1e88b65f8f7",
@@ -868,6 +996,14 @@
                 "id": "00324eca-e96c-4951-960b-cf6984a5add3",
                 "resourcePath": "objects\\obj_mage\\obj_mage.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "dae94485-e9ed-4d37-83ce-46e07886c7c4",
+            "Value": {
+                "id": "73bf7b0d-36c1-4d54-8296-c2e0cae97c2e",
+                "resourcePath": "sprites\\spr_veneraAoEboom\\spr_veneraAoEboom.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -951,10 +1087,10 @@
             }
         },
         {
-            "Key": "f3c40203-3116-4795-9463-f915ba26763a",
+            "Key": "f3a1684c-f604-44b9-a01f-981b5573a2e5",
             "Value": {
-                "id": "6f467a8c-2616-463b-981e-8ae1b800dac9",
-                "resourcePath": "objects\\obj_lightmage\\obj_lightmage.yy",
+                "id": "ac6a625d-652a-46f4-b931-dbe65fb59f3f",
+                "resourcePath": "objects\\par_enemyShade\\par_enemyShade.yy",
                 "resourceType": "GMObject"
             }
         },

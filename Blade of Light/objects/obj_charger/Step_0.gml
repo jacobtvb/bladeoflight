@@ -101,7 +101,20 @@ if state = "attack1_phase3"
 		state = "pursue" 
 		}
 	}
-	
+
+// Die
+
+if hp <= 0 then
+	{
+	inst = instance_create_depth(x,y,depth,obj_chargerCorpse)
+	with inst
+		{
+		direction = random(360)
+		speed = 6;
+		}
+	instance_destroy();	
+	}
+
 // Visuals
 
 

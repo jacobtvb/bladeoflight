@@ -125,6 +125,7 @@ if state = "attack2_phase2"
 		{
 		hsp = 0;
 		vsp = 0;
+		state = "attack2_phase3"	
 		repeat(12)
 			{
 			inst = instance_create_depth(x,y,depth,obj_knightExplodeSpawner2)
@@ -140,6 +141,17 @@ if state = "attack2_phase2"
 			}
 		}
 	}
+	
+if hp <= 0 then
+	{
+	inst = instance_create_depth(x,y,depth,obj_knightCorpse)
+	with inst
+		{
+		direction = random(360)
+		speed = 20;
+		}
+	instance_destroy();	
+	}	
 	
 // Visuals
 

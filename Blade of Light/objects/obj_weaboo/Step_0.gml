@@ -93,7 +93,21 @@ if state = "attack1_phase3"
 	hsp = lerp(hsp,0,0.2)
 	vsp = lerp(vsp,0,0.2)
 	}
+	
+// Die
 
+if hp <= 0 then
+	{
+	inst = instance_create_depth(x,y,depth,obj_weabooCorpse)
+	with inst
+		{
+		direction = random(360)
+		speed = 6;
+		}
+	instance_destroy();	
+	}
+	
+	
 	
 // Visuals
 

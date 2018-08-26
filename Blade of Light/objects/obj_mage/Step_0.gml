@@ -95,6 +95,17 @@ if state = "attack1_phase2"
 	vsp = lerp(vsp,0,0.2)
 	}
 
+if hp <= 0 then
+	{
+	inst = instance_create_depth(x,y,depth,obj_mageCorpse)
+	with inst
+		{
+		direction = random(360)
+		speed = 10;
+		}
+	instance_destroy();	
+	}		
+	
 	
 // Visuals
 

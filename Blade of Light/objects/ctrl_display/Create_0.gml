@@ -5,7 +5,7 @@ camera_rate = 0.1;
 target_x_center = camera_width div 2;
 target_y_center = camera_height div 2;
 
-if (instance_exists(obj_player))
+if !(instance_exists(obj_player))
 {
     target_x_center = (obj_player.bbox_left + obj_player.bbox_right) div 2;
     target_y_center = (obj_player.bbox_top + obj_player.bbox_bottom) div 2;

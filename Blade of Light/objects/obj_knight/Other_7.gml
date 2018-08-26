@@ -6,7 +6,7 @@ if state = "attack1_phase2"
 	if irandom(3) = 1 alarm[0] = 1;
 	}
 	
-if state = "attack2_phase2"
+if state = "attack2_phase3"
 	{
 	state = "pursue" 
 	canAttack = 0;

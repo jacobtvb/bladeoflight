@@ -9,3 +9,5 @@ hsp = 0;
 vsp = 0;
 
 drawWidth = 1;
+
+invul = 0;

@@ -6,8 +6,8 @@ hsp = 0;
 vsp = 0;
 acc = 0.5;
 dashsp = 20;
-walksp = 3.5;
-walkspMax = 3.5;
+walksp = 4.5;
+walkspMax = 4.5;
 restrict = 0;
 dashing = 0;
 

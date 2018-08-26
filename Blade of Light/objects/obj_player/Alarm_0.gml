@@ -10,5 +10,6 @@ if dashing = 1
 	dashing = 2;
 	knockback = 0;
 	alarm[0] = 15
+	invul = 0;
 	}
 	

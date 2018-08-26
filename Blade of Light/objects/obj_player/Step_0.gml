@@ -55,7 +55,7 @@ if key_dash and dashing = 0 and attacking = 0
 			if facing = 1 then { sprite_index = spr_playerSideDash; hsp = 30 * -drawWidth }
 			if facing = 2 then { sprite_index = spr_playerBackDash; vsp = -30 }
 			}	
-			
+	sfx_play(playerdash)		
 	dashing = 1;
 	alarm[0] = 10;
 	knockback = 1;
@@ -80,6 +80,7 @@ if keyboard_check(ord("Z")) and canCharge = 1
 		
 		if chargePer = 100
 			{
+			sfx_play(chargeLevelUp)
 			chargeLevel += 1;
 			chargePer = 0;
 			repeat(100) instance_create_depth(x,y,depth,part_burst_placeholder1)
@@ -108,6 +109,7 @@ if keyboard_check_released(ord("Z"))
 		
 	if chargeLevel = 1
 		{
+			
 		if facing = 0 then { sprite_index = front_charge_slash; vsp = 50 
 			inst = instance_create_depth(x,y,depth,obj_playerDamage)
 			with inst	
@@ -142,6 +144,8 @@ if keyboard_check_released(ord("Z"))
 				ypl = -70
 				}
 			}
+			
+		sfx_play(swing)
 		attacking = 1;
 		image_index = 0;
 		image_speed = 2;
@@ -164,6 +168,7 @@ if keyboard_check_released(ord("Z"))
 			if facing = 2 then { sprite_index = back_charge_whirlwind; vsp = -60 }
 			}
 		instance_create_depth(x,y,depth,obj_playerWhirlBox);
+		sfx_play(whirl)
 		attacking = 2;
 		image_index = 0;
 		image_speed = 1.5;
@@ -178,6 +183,7 @@ if keyboard_check_released(ord("Z"))
 		chargePer = 0;
 		chargeLevel = 0;
 		instance_create_depth(x,y,depth,obj_veneraPlayer)
+		sfx_play(vgteleport)
 		}
 	}
 	

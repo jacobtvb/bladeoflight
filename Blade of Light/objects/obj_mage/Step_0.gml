@@ -75,6 +75,7 @@ if state = "attack1_phase1"
 	if target.x < x then drawWidth = 1
 	if image_index >= 5 and image_index < 6
 		{
+		sfx_play(enemyshoot)
 		state = "attack1_phase2"
 		walkAngle = point_direction(x,y,target.x,target.y)
 		hsp = lengthdir_x(15,walkAngle)
@@ -97,6 +98,7 @@ if state = "attack1_phase2"
 
 if hp <= 0 then
 	{
+	sfx_play(enemydie)
 	inst = instance_create_depth(x,y,depth,obj_mageCorpse)
 	with inst
 		{

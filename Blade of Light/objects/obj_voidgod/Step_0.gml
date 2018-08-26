@@ -52,6 +52,7 @@ if state = "pursue"
 			vsp = 0;
 			sprite_index = spr_vgFire;
 			image_index = 0;
+			sfx_play(vgcast)
 			}
 		else if irandom(1) = 1
 			{
@@ -60,18 +61,21 @@ if state = "pursue"
 			vsp = 0;
 			sprite_index = spr_vgSummon;
 			image_index = 0;
+			sfx_play(vgcast)
 			}
 		else if irandom(2) = 1 and phase = 2
 			{
 			state = "tpOut1Whirl"
 			hsp = 0;
 			vsp = 0;
+			sfx_play(vgteleport)
 			}
 		else if irandom(2) = 1  and phase = 2
 			{
 			state = "tpOut1AoE"
 			hsp = 0;
 			vsp = 0;
+			sfx_play(vgteleport)
 			}
 		}
 	}
@@ -88,6 +92,7 @@ if state = "attack2_phase1"
 
 if state = "attack2_phase2"
 	{
+	sfx_play(whirl)
 	if hsp > 0 then drawWidth = -1;
 	if hsp < 0 then drawWidth = 1;
 	walkAngle = point_direction(x,y,target.x,target.y)
@@ -152,7 +157,8 @@ if state = "AoE_phase1"
 		{
 		state = "AoE_phase2" 
 		sprite_index = spr_vgbeam;
-		image_index = 0;	
+		image_index = 0;
+		sfx_play(explosion)
 		repeat(24)
 			{
 			inst = instance_create_depth(x,y,depth,obj_knightExplodeSpawner2)
@@ -173,6 +179,7 @@ if state = "AoE_phase1"
 
 if state = "tpOut1"	
 	{
+	sfx_play(vgteleport)
 	sprite_index = spr_vgTpOut
 	image_index = 0;
 	state = "tpOut"	
@@ -281,6 +288,7 @@ if state = "scytheThrow_phase1"
 
 if state = "tpOutCombo1"	
 	{
+	sfx_play(vgteleport)
 	sprite_index = spr_vgTpOut
 	image_index = 0;
 	state = "tpOutCombo"	
@@ -320,6 +328,7 @@ if state = "attack1_phase1"
 		state = "attack1_phase2"
 		hsp = lengthdir_x(45,walkAngle)
 		vsp = lengthdir_y(45,walkAngle)
+		sfx_play(enemyshoot)
 		repeat(10) {
 		inst = instance_create_depth(x,y-64,depth,obj_mageFireball)
 		with inst	

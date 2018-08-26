@@ -7,4 +7,5 @@ if invul = 0 and other.sprite_index = spr_veneraAoEboom
 	invul = 1;
 	alarm[1] = 10;
 	knockback = 1;
+	sfx_play(playerhit)
 	}

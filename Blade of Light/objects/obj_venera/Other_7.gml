@@ -45,6 +45,7 @@ if state = "dodgeTran_phase3"
 	
 if state = "AoE_phase1"
 	{
+	
 	image_index = 8
 	alarm[2] = 20;
 	image_speed = 0;

@@ -72,6 +72,7 @@ if state = "attack1_phase1"
 		state = "attack1_phase2"
 		hsp = lengthdir_x(15,walkAngle)
 		vsp = lengthdir_y(15,walkAngle)
+		sfx_play(explosion)
 		repeat(5)
 		{
 		inst = instance_create_depth(x,y,depth,obj_knightExplodeSpawner1)
@@ -109,6 +110,7 @@ if state = "attack2_phase1"
 	{
 	if image_index >= 3 and image_index < 4
 		{
+		sfx_play(enemydash)
 		walkAngle = point_direction(x,y,target.x,target.y)
 		if target.x > x then drawWidth = -1
 		if target.x < x then drawWidth = 1
@@ -125,7 +127,8 @@ if state = "attack2_phase2"
 		{
 		hsp = 0;
 		vsp = 0;
-		state = "attack2_phase3"	
+		state = "attack2_phase3"
+		sfx_play(explosion)
 		repeat(12)
 			{
 			inst = instance_create_depth(x,y,depth,obj_knightExplodeSpawner2)
@@ -144,6 +147,7 @@ if state = "attack2_phase2"
 	
 if hp <= 0 then
 	{
+	sfx_play(enemydie)
 	inst = instance_create_depth(x,y,depth,obj_knightCorpse)
 	with inst
 		{

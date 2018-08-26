@@ -7,4 +7,6 @@ if invul = 0
 	invul = 1;
 	alarm[1] = 10;
 	knockback = 1;
+	sfx_play(playerhit)
 	}
+	

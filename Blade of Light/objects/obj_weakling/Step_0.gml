@@ -57,6 +57,7 @@ if state = "attack1_phase1"
 	if image_index >= 4 and image_index < 5
 		{
 		state = "attack1_phase2"
+		sfx_play(swing)
 		hsp = lengthdir_x(45,walkAngle)
 		vsp = lengthdir_y(45,walkAngle)
 		inst = instance_create_depth(x,y,depth,obj_damage)
@@ -85,6 +86,7 @@ if state = "attack1_phase2"
 
 if hp <= 0 then
 	{
+	sfx_play(enemydie)
 	inst = instance_create_depth(x,y,depth,obj_weaklingCorpse)
 	with inst
 		{

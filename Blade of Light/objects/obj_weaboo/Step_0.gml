@@ -57,6 +57,7 @@ if state = "attack1_phase1"
 		{
 		image_index = 0;
 		sprite_index = spr_weabooDash;
+		sfx_play(enemydash)
 		drawAngle = point_direction(x,y,target.x,target.y)
 		walkAngle = point_direction(x,y,target.x,target.y)
 		drawWidth = -1;
@@ -98,6 +99,7 @@ if state = "attack1_phase3"
 
 if hp <= 0 then
 	{
+	sfx_play(enemydie)
 	inst = instance_create_depth(x,y,depth,obj_weabooCorpse)
 	with inst
 		{

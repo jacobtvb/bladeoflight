@@ -106,6 +106,7 @@ if state = "attack1_phase3"
 
 if hp <= 0 then
 	{
+	sfx_play(enemydie)
 	inst = instance_create_depth(x,y,depth,obj_chargerCorpse)
 	with inst
 		{

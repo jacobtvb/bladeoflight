@@ -16,7 +16,7 @@ dashing = 0;
 canCharge = 1;
 charging = 0;
 chargeLevel = 0;
-chargeLevelMax = 3;
+chargeLevelMax = 2;
 chargePer = 0;
 
 attacking = 0;

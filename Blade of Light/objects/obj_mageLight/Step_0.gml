@@ -26,7 +26,7 @@ y = y + vsp;
 
 if state = "idle"
 	{
-	if !collision_line(x,y,target.x,target.y,obj_wall,false,true)	
+	if !collision_line(x,y,target.x,target.y,obj_wall,false,true) and point_distance(x,y,target.x,target.y) < 400
 		{
 		state = "pursue"
 		}
@@ -85,8 +85,8 @@ if state = "attack1_phase1"
 		with inst	
 			{
 			parent = other
-			direction = point_direction(x,y,parent.target.x,parent.target.y) + random_range(-20,20)
-			speed = random_range(5,20);
+			direction = point_direction(x,y,parent.target.x,parent.target.y) + random_range(-10,10)
+			speed = random_range(15,20);
 			}
 		}
 		}

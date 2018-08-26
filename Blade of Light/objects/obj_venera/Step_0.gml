@@ -64,7 +64,7 @@ if state = "pursue"
 			sprite_index = spr_veneraStabIn;
 			image_index = 0;
 			}
-		else 
+		else if phase = 2
 			{
 			state = "AoE_phase1"	
 			sprite_index = spr_veneraAoE;
@@ -117,6 +117,30 @@ if state = "dodge_phase3"
 	hsp = lerp(hsp,0,0.1)
 	vsp = lerp(vsp,0,0.1)
 	}
+	
+if state = "dodgeTran_phase1"
+	{
+	walkAngle = point_direction(target.x,target.y,x,y) + choose(-90,0,90)
+	hsp = lengthdir_x(25,walkAngle)
+	vsp = lengthdir_y(25,walkAngle)
+	state = "dodgeTran_phase2"
+	}
+
+if state = "dodgeTran_phase2"
+	{
+	if image_index >= 3 and image_index < 4
+		{
+		sprite_index = spr_veneraDodgeLand	
+		image_index = 0;
+		state = "dodgeTran_phase3"
+		}
+	}
+
+if state = "dodgeTran_phase3"
+	{
+	hsp = lerp(hsp,0,0.1)
+	vsp = lerp(vsp,0,0.1)
+	}
 
 if state = "attack2_phase1"	
 	{
@@ -158,8 +182,8 @@ if state = "attack2_phase3"
 	if image_index >= 13 and image_index < 14
 		{
 		state = "attack2_phase4"
-		hsp = lengthdir_x(45,walkAngle)
-		vsp = lengthdir_y(45,walkAngle)
+		hsp = lengthdir_x(55,walkAngle)
+		vsp = lengthdir_y(55,walkAngle)
 		inst = instance_create_depth(x,y,depth,obj_damage)
 		with inst	
 			{
@@ -222,23 +246,34 @@ if state = "attack1_phase3"
 	vsp = lerp(vsp,0,0.2)
 	}
 	
-// Die
+// Phase Tran
 
-if hp <= 0 then
+if hp <= 15 and phase = 1 then
 	{
-	inst = instance_create_depth(x,y,depth,obj_weabooCorpse)
-	with inst
-		{
-		direction = random(360)
-		speed = 6;
-		}
-	instance_destroy();	
+	state = "dodgeTran_phase1"	
+	sprite_index = spr_veneraDodge;
+	image_index = 0;
+	attackDel = 0;
+	walksp = 7;
+	image_speed = 1;
+	phase = 2;
 	}
 	
 	
 	
 // Visuals
 
-
+if hp <= 0 then
+	{
+	inst = instance_create_depth(x,y,depth,obj_veneraDefeat)
+	with inst
+		{
+		direction = random(360)
+		speed = 10;
+		}
+	with obj_veneraAoE instance_destroy();
+	instance_destroy();	
+	
+	}	
 
 depth = -bbox_bottom

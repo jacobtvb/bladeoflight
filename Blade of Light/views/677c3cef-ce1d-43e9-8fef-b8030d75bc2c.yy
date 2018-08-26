@@ -14,7 +14,8 @@
         "6715318d-9746-4ecd-98ef-648c3c03343c",
         "7dcd2e51-84d8-43a9-abc2-cd2d6ed10c87",
         "0c323602-97a3-44b8-aad4-9f057b274741",
-        "dae94485-e9ed-4d37-83ce-46e07886c7c4"
+        "dae94485-e9ed-4d37-83ce-46e07886c7c4",
+        "34dfd387-24d0-41c2-91e7-bf1b903e75ac"
     ],
     "filterType": "GMSprite",
     "folderName": "venera",

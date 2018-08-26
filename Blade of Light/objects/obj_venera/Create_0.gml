@@ -1,9 +1,12 @@
-hp = 16;
+hp = 30;
 state = "idle";
-walksp = 5;
+walksp = 4;
+attackDel = 50;
 damage = 1;
 canAttack = 1;
 target = obj_player;
+
+phase = 1;
 
 drawAngle = 0;
 

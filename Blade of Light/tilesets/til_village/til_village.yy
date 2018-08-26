@@ -4,7 +4,31 @@
     "mvc": "1.11",
     "name": "til_village",
     "auto_tile_sets": [
-        
+        {
+            "id": "41100480-4e68-4db6-9866-00f0a6d4d8ab",
+            "modelName": "GMAutoTileSet",
+            "mvc": "1.0",
+            "closed_edge": false,
+            "name": "Edges",
+            "tiles": [
+                1,
+                44,
+                43,
+                6,
+                36,
+                13,
+                0,
+                5,
+                35,
+                0,
+                15,
+                7,
+                22,
+                21,
+                23,
+                34
+            ]
+        }
     ],
     "macroPageTiles": {
         "SerialiseData": null,

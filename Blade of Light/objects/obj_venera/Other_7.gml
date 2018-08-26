@@ -1,6 +1,6 @@
 if state = "attack1_phase3"
 	{
-	if combo < 2
+	if combo < 2 and phase = 2
 		{
 		state = "attack1_phase1" 
 		canAttack = 1;
@@ -15,7 +15,7 @@ if state = "attack1_phase3"
 		combo = 0;	
 		state = "pursue" 
 		canAttack = 0;
-		alarm[0] = random_range(10,150)
+		alarm[0] = random_range(10,50 + attackDel)
 		}
 	
 	}
@@ -24,7 +24,7 @@ if state = "attack2_phase4"
 	{
 	state = "pursue" 
 	canAttack = 0;
-	alarm[0] = random_range(10,75)
+	alarm[0] = random_range(10,25 + attackDel) 
 	}
 	
 if state = "dodge_phase3"
@@ -32,6 +32,15 @@ if state = "dodge_phase3"
 	state = "pursue" 
 	canAttack = 0;
 	alarm[0] = 1
+	}
+	
+if state = "dodgeTran_phase3"
+	{
+	state = "AoE_phase1"	
+	sprite_index = spr_veneraAoE;
+	image_index = 0;
+	hsp = 0;
+	vsp = 0;
 	}
 	
 if state = "AoE_phase1"

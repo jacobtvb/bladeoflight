@@ -101,6 +101,17 @@ if state = "attack1_phase2"
 	
 // Visuals
 
-
+if hp <= 0 then
+	{
+	inst = instance_create_depth(x,y,depth,obj_lightmageCorpse)
+	with inst
+		{
+		direction = random(360)
+		speed = 6;
+		}
+	instance_destroy();	
+	}
+	
+	
 
 depth = -bbox_bottom

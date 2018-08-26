@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "06c1f8da-07ad-4526-b1a5-75e3d2e07e3a",
+            "Value": {
+                "id": "fe705404-71e0-4656-9a8d-6058708cd794",
+                "resourcePath": "rooms\\rm_gardens6\\rm_gardens6.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "06e076f2-6487-421b-8f86-92e5a94e05c8",
             "Value": {
                 "id": "a1e953fb-24c1-4b24-bbf1-b7a704442adb",
@@ -140,6 +148,14 @@
                 "id": "9a34e51b-4865-4f25-a556-e2eaf91da8a8",
                 "resourcePath": "views\\0e7aa3fd-6c51-4ec8-82d1-d02644a3221c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "111806d7-a3cd-4a72-95ef-258945e3b00e",
+            "Value": {
+                "id": "3dc29447-0137-4d42-8929-ed5af0e999ac",
+                "resourcePath": "rooms\\rm_gardens5\\rm_gardens5.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -307,6 +323,14 @@
             "Value": {
                 "id": "c6154777-a37f-40cf-bea1-54b29a5b763d",
                 "resourcePath": "sprites\\spr_weaklingIdle\\spr_weaklingIdle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "34dfd387-24d0-41c2-91e7-bf1b903e75ac",
+            "Value": {
+                "id": "3cea66d9-7795-408f-b202-65b2e2833207",
+                "resourcePath": "sprites\\spr_veneraDefeat\\spr_veneraDefeat.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1468,6 +1492,14 @@
                 "id": "bf64a619-4fa1-4be0-898d-ac51fa143e72",
                 "resourcePath": "views\\f6420463-20da-4d43-8e19-cef7713f4283.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f87e0749-33dc-4910-aa4a-537bfc0947db",
+            "Value": {
+                "id": "b4030eb6-bea2-4cba-8ce2-206d9e2003df",
+                "resourcePath": "objects\\obj_veneraDefeat\\obj_veneraDefeat.yy",
+                "resourceType": "GMObject"
             }
         },
         {

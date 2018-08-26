@@ -711,6 +711,14 @@
             }
         },
         {
+            "Key": "5ff605c9-bd8e-45df-8733-01ca659a4b41",
+            "Value": {
+                "id": "9d582be3-600a-4b46-a136-4d994340caae",
+                "resourcePath": "sounds\\sfx_test\\sfx_test.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "60f332ff-1d08-4de4-ae33-d2c1fbc3a3e3",
             "Value": {
                 "id": "463356ce-32c9-4503-8d8e-c3ffb4cb0862",
@@ -1615,14 +1623,6 @@
             }
         },
         {
-            "Key": "d94b9eb7-8053-4486-aff1-6fb31c2e7e6d",
-            "Value": {
-                "id": "385ac071-c154-4309-b513-2c94a9b01149",
-                "resourcePath": "rooms\\rm_gardens6\\rm_gardens6.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "d9731a69-f103-4576-bc73-38c5e2d84698",
             "Value": {
                 "id": "2524d998-5e48-4ad0-82dc-22a01eba3dea",
@@ -1700,6 +1700,14 @@
                 "id": "109e4a83-132a-449a-96b9-2c5926a9e10e",
                 "resourcePath": "tilesets\\til_village\\til_village.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "e3713bb0-790f-44f2-9d69-a3d31dc269fc",
+            "Value": {
+                "id": "7cacfe87-5c19-4900-88db-8b63a428268c",
+                "resourcePath": "scripts\\sfx_play\\sfx_play.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1904,7 +1912,8 @@
         "56fff8c9-5e3b-4298-89fa-c81e7c2d090e",
         "c6c9d131-bcb1-4eb0-9233-b37c90ea1ed6",
         "aa3c5754-940c-4489-b60f-9e736f436c9d",
-        "cdc4c9f3-afb7-42ff-b67c-73f7293ca5be"
+        "cdc4c9f3-afb7-42ff-b67c-73f7293ca5be",
+        "e3713bb0-790f-44f2-9d69-a3d31dc269fc"
     ],
     "tutorial": ""
 }

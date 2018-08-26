@@ -60,7 +60,7 @@ if key_dash and dashing = 0 and attacking = 0
 	alarm[0] = 10;
 	knockback = 1;
 	invul = 1;
-	
+	sfx_play(sfx_test);
 	}
 
 // Charging

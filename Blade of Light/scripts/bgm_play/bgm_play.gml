@@ -6,15 +6,18 @@ with (ctrl_overmind)
 {
     if (current_bgm == argument0)
     {
+        if (is_undefined(argument0) && !is_undefined(bgm_instance))
+            audio_stop_sound(bgm_instance);
+
         next_bgm = argument0;
         exit;
     }
     
-    if (!is_undefined(current_bgm))
-        audio_stop_sound(current_bgm);
+    if (!is_undefined(bgm_instance))
+        audio_stop_sound(bgm_instance);
     
     current_bgm = argument0;
     next_bgm = argument0;
     if (!is_undefined(current_bgm))
-        audio_play_sound(current_bgm, 100, false);
+        bgm_instance = audio_play_sound(current_bgm, 100, false);
 }

@@ -28,7 +28,7 @@ hurt = 0;
 dead = 0;
 invul = 0;
 knockback = 0;
-hpMax = 5;
+hpMax = 10 - 5 * gamestate_get("difficulty");
 hp = hpMax;
 
 // Visual

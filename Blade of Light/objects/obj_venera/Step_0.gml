@@ -256,6 +256,7 @@ if state = "attack1_phase3"
 
 if hp <= 15 and phase = 1 then
 	{
+    drawAngle = 0;
 	sfx_play(enemydash)
 	state = "dodgeTran_phase1"	
 	sprite_index = spr_veneraDodge;
@@ -264,6 +265,7 @@ if hp <= 15 and phase = 1 then
 	walksp = 7;
 	image_speed = 1;
 	phase = 2;
+    bgm_queue(bgm_venera_second);
 	}
 	
 	
@@ -277,10 +279,13 @@ if hp <= 0 then
 		{
 		direction = random(360)
 		speed = 10;
+        alarm[3] = 450;
 		}
 	with obj_veneraAoE instance_destroy();
 	instance_destroy();	
-	sfx_play(explosion)
+	sfx_play(explosion);
+    bgm_fade();
+    bgm_queue(bgm_venera_outro);
 	}	
 
 depth = -bbox_bottom

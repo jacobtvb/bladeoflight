@@ -1,3 +1,6 @@
+spawnRemaining = 0;
+spawnTotal = 0;
+
 if (!instance_exists(ctrl_arenaTown))
 {
     if (name == "")

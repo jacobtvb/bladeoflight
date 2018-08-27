@@ -1,6 +1,7 @@
 event_inherited();
 
-hp = 8;
+hpMax = (room == rm_vil6 ? 15 : 8);
+hp = hpMax;
 state = "idle";
 walksp = 2.5;
 damage = 1;

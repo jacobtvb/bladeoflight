@@ -358,6 +358,14 @@ if hp <= 25 and phase = 1 then
 	walksp = 6;
 	image_speed = 1;
 	phase = 2;
+    bgm_queue(bgm_voidgod_second);
+	}
+
+if hp <= 0 then
+	{
+    obj_info.info = "The evil has been defeated!";
+    bgm_queue(bgm_voidgod_outro);
+    instance_destroy();
 	}
 
 depth = -bbox_bottom

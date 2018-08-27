@@ -116,7 +116,16 @@
         }
     ],
     "maskSpriteId": "276d2f64-c397-4b2e-b80d-de4068b663ff",
-    "overriddenProperties": null,
+    "overriddenProperties": [
+        {
+            "id": "91293584-e9f6-4c5d-a8ac-6b021828aead",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "44102eb5-3672-46d9-a9f1-0fbc4f20fe7f",
+            "propertyId": "d7be7087-74b0-486e-a90c-2a2975437f38",
+            "value": "\"Darth Voider\""
+        }
+    ],
     "parentObjectId": "f3a1684c-f604-44b9-a01f-981b5573a2e5",
     "persistent": false,
     "physicsAngularDamping": 0.1,

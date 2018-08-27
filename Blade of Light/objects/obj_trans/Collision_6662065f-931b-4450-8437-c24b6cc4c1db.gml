@@ -13,6 +13,7 @@ switch (side)
         navigation_set(target_room, edge, obj_player.x - x, 128);
         break;
 }
+gamestate_set("player_hp", obj_player.hp);
 navigation_do();
 
 /*

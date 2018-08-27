@@ -8,7 +8,8 @@
         "ca36cebe-5737-4978-b62f-cc32380dd6b8",
         "e020a366-bd41-411f-ac2c-a0bbda1c74ff",
         "3fc702c7-1766-4d1d-880f-93acbaee6550",
-        "654b0dec-ce49-4576-9084-c31b8917df92"
+        "654b0dec-ce49-4576-9084-c31b8917df92",
+        "81a73594-301d-49b4-acbe-05974ebaca36"
     ],
     "filterType": "GMObject",
     "folderName": "Knight",

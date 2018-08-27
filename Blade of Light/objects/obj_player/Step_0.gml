@@ -1,10 +1,14 @@
 /// Controls
 
-key_left = keyboard_check(vk_left);
-key_right = keyboard_check(vk_right);
-key_up = keyboard_check(vk_up);
-key_down = keyboard_check(vk_down);
-key_dash = keyboard_check_pressed(ord("X"));
+no_dialogue = !instance_exists(ctrl_dialogue);
+key_left = no_dialogue && keyboard_check(vk_left);
+key_right = no_dialogue && keyboard_check(vk_right);
+key_up = no_dialogue && keyboard_check(vk_up);
+key_down = no_dialogue && keyboard_check(vk_down);
+key_charge = no_dialogue && keyboard_check(ord("Z"));
+key_discharge = no_dialogue && keyboard_check_released(ord("Z"));
+key_dash = no_dialogue && keyboard_check_pressed(ord("X"));
+key_pray = no_dialogue && keyboard_check_pressed(ord("C"));
 
 var moveHor = key_right - key_left;
 if restrict = 0 and knockback = 0 then hsp = moveHor * walksp;
@@ -61,10 +65,26 @@ if key_dash and dashing = 0 and attacking = 0
 	knockback = 1;
 	invul = 1;
 	}
+    
+// Interacting
+
+if (key_pray && place_meeting(x, y, obj_shrineInfo))
+{
+    obj_player.hp = obj_player.hpMax;
+    gamestate_checkpoint_save();
+}
+
+if (key_pray && place_meeting(x, y, obj_switchInfo))
+{
+    obj_switch.image_single = 1;
+    gamestate_fallen_make("switch", obj_switch.name);
+    with (obj_switchInfo)
+        instance_destroy();
+}
 
 // Charging
 
-if keyboard_check(ord("Z")) and canCharge = 1
+if key_charge and canCharge = 1
 	{
 	charging = 1;
 	walksp = walkspMax/3
@@ -93,9 +113,9 @@ if keyboard_check(ord("Z")) and canCharge = 1
 		}
 	}
 
-if keyboard_check_released(ord("Z"))
+if key_discharge or !no_dialogue
 	{
-	if chargeLevel = 0	
+	if chargeLevel = 0 or !no_dialogue
 		{
 		attacking = 0;
 		charging = 0;
@@ -106,7 +126,7 @@ if keyboard_check_released(ord("Z"))
 		image_speed = 1.3	
 		}
 		
-	if chargeLevel = 1
+	if chargeLevel = 1 and no_dialogue
 		{
 			
 		if facing = 0 then { sprite_index = front_charge_slash; vsp = 50 
@@ -152,7 +172,7 @@ if keyboard_check_released(ord("Z"))
 		chargePer = 0;
 		chargeLevel = 0;
 		}
-	if chargeLevel = 2
+	if chargeLevel = 2 and no_dialogue
 		{
 		if hsp != 0 and vsp != 0 
 			{
@@ -177,12 +197,14 @@ if keyboard_check_released(ord("Z"))
 		invul = 1;
 		}
 		
-	if chargeLevel = 3
+	if chargeLevel = 3 and no_dialogue
 		{
 		chargePer = 0;
 		chargeLevel = 0;
 		instance_create_depth(x,y,depth,obj_veneraPlayer)
 		sfx_play(vgteleport)
+        if (hp < hpMax)
+            hp++;
 		}
 	}
 	
@@ -245,7 +267,7 @@ if charging = 1 and attacking = 0 and dashing != 1
 
 if (hp <= 0)
 {
-    navigation_do();
+    gamestate_checkpoint_load();
 }
 
-depth = -bbox_bottom
+depth = -bbox_bottom;

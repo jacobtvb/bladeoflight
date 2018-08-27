@@ -1,4 +1,12 @@
 {
-    "room": "",
-    "checkpoint": ""
+    "fallen_light": [],
+    "fallen_dark": [],
+    "fallen_script": [],
+    "fallen_switch": [],
+    "shrine_room": "rm_vil1",
+    "shrine_spawn": "init",
+    "shrine_xoffset": 0,
+    "shrine_yoffset": 0,
+    "arena_win": 0,
+    "difficulty": 0
 }

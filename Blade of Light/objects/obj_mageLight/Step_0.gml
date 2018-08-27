@@ -24,7 +24,7 @@ if (place_meeting(x,y+vsp,obj_wall))
 
 y = y + vsp;
 
-if state = "idle"
+if state = "idle" && !instance_exists(ctrl_dialogue)
 	{
 	if !collision_line(x,y,target.x,target.y,obj_wall,false,true) and point_distance(x,y,target.x,target.y) < 400
 		{

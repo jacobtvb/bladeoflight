@@ -5,28 +5,23 @@ with (obj_info)
 
 if (instance_exists(obj_player) && obj_player.hp >= 0)
 {
-    draw_set_alpha(1);
-    draw_set_color(c_red);
-
     var _cx = camera_get_view_x(camera);
     var _cy = camera_get_view_y(camera);
-    for (var i = 0; i < obj_player.hp; i++)
+    for (var i = 0; i < obj_player.hpMax; i++)
     {
-        draw_rectangle(_cx+1 + 32*i, _cy+1, _cx + 30 + 32*i, _cy + 30, false);
+        draw_sprite(spr_health, 0 + (i < obj_player.hp), 8 + _cx + 12 * i, 8 + _cy);
     }
+    draw_sprite(spr_health, 6, 8 + _cx + 12 * obj_player.hpMax, 8 + _cy);
 }
 
 if (instance_exists(obj_venera) && obj_venera.hp >= 0)
 {
-    draw_set_alpha(1);
-    draw_set_color(c_blue);
-
     var _cx = camera_get_view_x(camera);
     var _cy = camera_get_view_y(camera);
     var _cw = camera_get_view_width(camera);
     var _ch = camera_get_view_height(camera);
-    for (var i = 0; i < obj_venera.hp; i++)
+    for (var i = 0; i < obj_venera.hpMax; i++)
     {
-        draw_rectangle(_cx + _cw - 30 - 32*i, _cy + _ch - 30, _cx + _cw - 1 - 32*i, _cy + _ch - 1, false);
+        draw_sprite(spr_health, 2 + (i < obj_venera.hp), _cx + _cw - 12 * (i + 1) - 8, 8 + _cy);
     }
 }

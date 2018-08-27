@@ -1,4 +1,5 @@
 hp = 30;
+hpMax = 30;
 state = "idle";
 walksp = 4;
 attackDel = 50;

@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "06c1f8da-07ad-4526-b1a5-75e3d2e07e3a",
+            "Value": {
+                "id": "fe705404-71e0-4656-9a8d-6058708cd794",
+                "resourcePath": "rooms\\rm_gardens6\\rm_gardens6.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "06e076f2-6487-421b-8f86-92e5a94e05c8",
             "Value": {
                 "id": "a1e953fb-24c1-4b24-bbf1-b7a704442adb",
@@ -756,14 +764,6 @@
                 "id": "439dc96d-77da-4447-8317-6154ee67587e",
                 "resourcePath": "sprites\\side_charge_slash\\side_charge_slash.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "5ff605c9-bd8e-45df-8733-01ca659a4b41",
-            "Value": {
-                "id": "9d582be3-600a-4b46-a136-4d994340caae",
-                "resourcePath": "sounds\\charging\\charging.yy",
-                "resourceType": "GMSound"
             }
         },
         {
